@@ -137,7 +137,18 @@ g <- factor(c('f', 'm', 'f', 'f', 'f', 'm', 'm', 'f'))
 table(g)
 
 a <- factor(c('adult', 'juvenile','adult', 'juvenile','adult', 'juvenile','juvenile', 'juvenile'))
+
 table(a, g)
 
+a <- factor(c('adult', 'juvenile','adult', 'juvenile','adult', 'juvenile','juvenile'))
 
+a <- factor(c('adult', 'juvenile','adult', 'juvenile','adult', 'juvenile','juvenile', 'juvenile'))
+
+t <- table(a, g)
+
+t
+
+margin.table(t, 1)
+
+margin.table(t, 2)
 ```
