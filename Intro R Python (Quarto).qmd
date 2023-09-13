@@ -89,4 +89,38 @@ set.seed(1)
 rnorm(1)
 
 rnorm(1)
+
+set.seed(2)
+
+rnorm(1)
+
+rnorm(1)
+
+exists("se")
+
+se <- function(x){
+  variance <- var(x)
+  n <-length(x)
+  return (sqrt(variance/n))
+}
+
+exists("se")
+
+convMeters <- function (x, to="inch"){
+  factor = switch(to, inch=39.3701, foot=3.28084, yard=1.09361, mile=0.000621371, NA)
+  if(is.na(factor)) stop ("unknown target unit")
+  else return (x*factor)
+}
+
+convMeters(23, "foot")
+
+convMeters(40)
+
+convMeters(56.2, "yard")
+
+convMeters(to="yard", 56.2)
+
+g <-c('f', 'm', 'f', 'f', 'f', 'm', 'm', 'f')
+
+
 ```
