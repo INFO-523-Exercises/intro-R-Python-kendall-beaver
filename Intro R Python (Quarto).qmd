@@ -32,5 +32,9 @@ detach("package:dbplyr", unload=TRUE)
 
 library(dplyr)
 
+installed.packages()
 
+old.packages()
+
+update.packages()
 ```
