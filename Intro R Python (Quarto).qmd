@@ -164,6 +164,8 @@ prop.table(t) * 100
 
 v <- c(2, 5, 3, 4)
 
+v
+
 length(v)
 
 mode(v)
@@ -171,6 +173,60 @@ mode(v)
 v <- c(2, 5, 3, 4, 'me')
 
 mode(v)
+
+v
+
+v <- c(2, 5, 3, 4, NA)
+
+mode(v)
+
+v
+
+b <- c(TRUE, FALSE, NA, TRUE)
+
+mode(b)
+
+b
+
+b[3]
+
+b[3] <- TRUE
+
+b
+
+b[10] <- FALSE
+
+b
+
+e <-vector()
+
+mode(e)
+
+e <- c()
+
+mode(e)
+
+length(e)
+
+b2 <-c(b[1], b[3], b[5])
+
+b2
+
+sqrt(v)
+
+v1 <- c(3, 6, 9)
+v2 <- c(1, 4, 8)
+v1+v2
+
+v1*v2
+
+v1-v2
+
+v1/v2
+
+v3 <- c(1, 4)
+
+v1+v3
 
 
 ```
