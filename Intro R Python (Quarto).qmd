@@ -16,4 +16,8 @@ data(algae)
 
 algae
 
+manyNAs(algae)
+
+library()
+
 ```
