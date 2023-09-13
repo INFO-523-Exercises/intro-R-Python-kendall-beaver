@@ -230,5 +230,15 @@ v1+v3
 
 2*v1
 
+mysum <- function (x){
+  sum <- 0
+  for(i in 1:length(x)){
+    sum <- sum + x[i]
+  }
+  return (sum)
+}
 
+(mysum (c(1, 2, 3)))
+
+(x <-1:10)
 ```
