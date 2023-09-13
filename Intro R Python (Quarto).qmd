@@ -1,0 +1,12 @@
+---
+title: "Intro to R/Python"
+author: "Kendall Beaver"
+format: html
+editor: visual
+---
+
+```{r}
+R.version
+
+help(package="DMwR2")
+```
