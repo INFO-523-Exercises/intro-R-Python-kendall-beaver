@@ -151,4 +151,26 @@ t
 margin.table(t, 1)
 
 margin.table(t, 2)
+
+t
+
+prop.table(t, 1)
+
+prop.table(t, 2)
+
+prop.table(t)
+
+prop.table(t) * 100
+
+v <- c(2, 5, 3, 4)
+
+length(v)
+
+mode(v)
+
+v <- c(2, 5, 3, 4, 'me')
+
+mode(v)
+
+
 ```
