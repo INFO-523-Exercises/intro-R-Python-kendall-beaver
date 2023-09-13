@@ -46,5 +46,47 @@ help("mean")
 
 RSiteSearch('neural networks')
 
+save.image()
 
+getwd()
+
+setwd("C:/Users/ual-laptop/Documents/GitHub/intro-R-Python-kendall-beaver")
+
+getwd()
+
+vat <- 0.2
+
+vat
+
+(vat <- 0.2)
+
+x <- 5
+y <- vat * x
+y
+
+z <-(y/2)^2
+
+y
+
+z
+
+ls()
+
+objects()
+
+rm(vat)
+
+max(4, 5, 6, 12, -4)
+
+mean(4, 5, 6, 12, -4)
+
+max(sample(1:100, 30))
+
+mean(sample(1:100, 30))
+
+set.seed(1)
+
+rnorm(1)
+
+rnorm(1)
 ```
