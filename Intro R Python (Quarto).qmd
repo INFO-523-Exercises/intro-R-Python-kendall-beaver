@@ -20,4 +20,17 @@ manyNAs(algae)
 
 library()
 
+(.packages())
+
+library (dbplyr)
+
+(.packages())
+
+detach("package:dbplyr", unload=TRUE)
+
+(.packages())
+
+library(dplyr)
+
+
 ```
