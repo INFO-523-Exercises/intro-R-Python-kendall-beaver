@@ -9,4 +9,11 @@ editor: visual
 R.version
 
 help(package="DMwR2")
+
+library(DMwR2)
+
+data(algae)
+
+algae
+
 ```
