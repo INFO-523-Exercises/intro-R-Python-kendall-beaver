@@ -122,5 +122,22 @@ convMeters(to="yard", 56.2)
 
 g <-c('f', 'm', 'f', 'f', 'f', 'm', 'm', 'f')
 
+g <- factor(g)
+
+other.g <-factor(c('m', 'm', 'm', 'm'), levels= c('f', 'm'))
+
+other.g
+
+other.g <-factor(c('m', 'm', 'm', 'm'))
+
+other.g
+
+g <- factor(c('f', 'm', 'f', 'f', 'f', 'm', 'm', 'f'))
+
+table(g)
+
+a <- factor(c('adult', 'juvenile','adult', 'juvenile','adult', 'juvenile','juvenile', 'juvenile'))
+table(a, g)
+
 
 ```
