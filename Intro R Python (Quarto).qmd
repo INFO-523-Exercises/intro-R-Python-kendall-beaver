@@ -37,4 +37,14 @@ installed.packages()
 old.packages()
 
 update.packages()
+
+update.packages(ask = FALSE)
+
+mean
+
+help("mean")
+
+RSiteSearch('neural networks')
+
+
 ```
