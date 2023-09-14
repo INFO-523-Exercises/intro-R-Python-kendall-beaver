@@ -241,4 +241,45 @@ mysum <- function (x){
 (mysum (c(1, 2, 3)))
 
 (x <-1:10)
+
+(x <-10:1)
+
+10:15-1
+
+10:(15-1)
+
+(seq(from=1, to=5, length=4))
+
+(seq(length=10, from=-2, by=0.5))
+
+(rep(5, 10))
+
+(rep("hi", 3))
+
+(rep(1:2, 3))
+
+gl(3, 5)
+
+gl(2, 5, labels= c('female', 'male'))
+
+gl(2, 1, 20, labels=c('female', 'male'))
+
+n <- rep(1:2, each=3)
+
+(n <- factor(n, 
+             levels = c(1, 2),
+             labels = c('female','male')
+             ))
+
+n
+
+(rnorm(10, mean=10, sd=3))
+
+(rt(10, df=5))
+
+exercise_rnorm <- (rnorm(100, mean=20, sd=4))
+
+se(exercise_rnorm)
+
+
 ```
