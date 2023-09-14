@@ -281,5 +281,21 @@ exercise_rnorm <- (rnorm(100, mean=20, sd=4))
 
 se(exercise_rnorm)
 
+x <- c(0, -3, 4, -1, 45, 90, -5)
+
+(gtzero <- x[x>0])
+
+(x[x<=-2 | x>5])
+
+(x[x>40 & x<100])
+
+(x[c(4,6)])
+
+(y<-c(4,6))
+
+(x[y])
+
+(x[1:3])
+
 
 ```
