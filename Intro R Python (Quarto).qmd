@@ -546,5 +546,27 @@ my.dataframe[my.dataframe$season=='summer', 'ph']
 
 my.dataframe[my.dataframe$season=='summer' & my.dataframe$ph>8, 'ph'] <- my.dataframe[my.dataframe$season=='summer' & my.dataframe$ph>8, 'ph'] + 1                                                              
         
-my.dataframe[my.dataframe$season=='summer', 'ph']                             
+my.dataframe[my.dataframe$season=='summer', 'ph']
+
+my.dataframe$NO3 <- c(234.5, 123.4, 456.7, 567.8, 789.0)
+my.dataframe
+
+my.dataframe <- my.dataframe[, -4]
+
+str(my.dataframe)
+
+nrow(my.dataframe)
+
+ncol(my.dataframe)
+
+dim(my.dataframe)
+
+edit(my.dataframe)
+View(my.dataframe)
+names(my.dataframe)
+names(my.dataframe) <- c('area', 'season', 'P.h.')
+my.dataframe
+
+names(my.dataframe)[3] <- 'ph'
+my.dataframe 
 ```
