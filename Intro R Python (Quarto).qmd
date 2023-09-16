@@ -491,5 +491,15 @@ mylist
 mylist$parents.names <- c('Ana',"Mike")
 mylist$parents.names
 
+newlist <- list(age=19, sex="male");
+expandedlist <-c(mylist, newlist)
+expandedlist
 
+length(expandedlist)
+
+expandedlist <- expandedlist[-5]
+expandedlist <- expandedlist[c(-1,-5)]
+expandedlist$parents.names <- NULL
+expandedlist[['marks']] <- NULL
+expandedlist
 ```
