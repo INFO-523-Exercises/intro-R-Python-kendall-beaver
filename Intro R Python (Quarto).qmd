@@ -517,5 +517,25 @@ is.atomic(mylist)
 
 is.list(unlist(mylist))
 
+my.dataframe <- data.frame(site=c('A', 'B', 'A','A', 'B'),
+                           season=c('winter', 'summer', 'summer', 'spring', 'fall'),                               ph = c(7.4, 6.3, 8.6, 7.2, 8.9))
+my.dataframe
 
+my.dataframe[3, 2]
+
+my.dataframe[['site']]
+
+my.dataframe['site']
+
+my.dataframe[my.dataframe$ph>7, ]
+
+my.dataframe[my.dataframe$ph>7, 'site']
+
+my.dataframe[my.dataframe$ph>7, c('site', 'ph')]
+
+subset(my.dataframe, ph>7)
+
+subset(my.dataframe, ph>7, c("site", "ph"))
+
+subset(my.dataframe[1:2,], ph>7, c(site,ph))
 ```
