@@ -568,5 +568,13 @@ names(my.dataframe) <- c('area', 'season', 'P.h.')
 my.dataframe
 
 names(my.dataframe)[3] <- 'ph'
-my.dataframe 
+my.dataframe
+
+library(tibble)
+
+my.tibble <- tibble(TempCels = sample(-10:40, size=100, replace=TRUE), 
+                    TempFahr = TempCels*9/5+32,
+                    Location = rep(letters[1:2], each=50))
+
+my.tibble
 ```
