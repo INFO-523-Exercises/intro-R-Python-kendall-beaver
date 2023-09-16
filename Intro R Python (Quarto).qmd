@@ -502,4 +502,20 @@ expandedlist <- expandedlist[c(-1,-5)]
 expandedlist$parents.names <- NULL
 expandedlist[['marks']] <- NULL
 expandedlist
+
+unlist(mylist)
+
+mode(mylist)
+
+mode(unlist(mylist))
+
+is.vector(unlist(mylist))
+
+is.list(mylist)
+
+is.atomic(mylist)
+
+is.list(unlist(mylist))
+
+
 ```
