@@ -465,4 +465,31 @@ mylist <- list(stud.id=34453,
                )
 
 mylist$stud.id
+mylist[1]
+mylist[[1]]
+mylist["stud.id"]
+
+handle <- "stud.id"
+mylist[handle]
+
+mylist[["stud.id"]]
+
+mylist <- list(stud.id=34453,
+               stud.name="John",
+               stud.marks= c(13, 3, 12, 15, 19)
+               )
+mylist$stud.marks
+
+mylist$stud.marks[2]
+
+names(mylist)
+
+names(mylist) <- c('id','name','marks')
+
+mylist
+
+mylist$parents.names <- c('Ana',"Mike")
+mylist$parents.names
+
+
 ```
