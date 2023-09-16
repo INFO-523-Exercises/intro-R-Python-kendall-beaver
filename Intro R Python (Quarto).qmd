@@ -538,4 +538,13 @@ subset(my.dataframe, ph>7)
 subset(my.dataframe, ph>7, c("site", "ph"))
 
 subset(my.dataframe[1:2,], ph>7, c(site,ph))
+
+my.dataframe[my.dataframe$season=='summer', 'ph'] <- 
+my.dataframe[my.dataframe$season=='summer', 'ph'] + 1 
+                                                                  
+my.dataframe[my.dataframe$season=='summer', 'ph']
+
+my.dataframe[my.dataframe$season=='summer' & my.dataframe$ph>8, 'ph'] <- my.dataframe[my.dataframe$season=='summer' & my.dataframe$ph>8, 'ph'] + 1                                                              
+        
+my.dataframe[my.dataframe$season=='summer', 'ph']                             
 ```
