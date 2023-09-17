@@ -577,4 +577,24 @@ my.tibble <- tibble(TempCels = sample(-10:40, size=100, replace=TRUE),
                     Location = rep(letters[1:2], each=50))
 
 my.tibble
+
+library(palmerpenguins)
+data(penguins)
+dim(penguins)
+class(penguins)
+penguins
+
+pe <-as_tibble(penguins)
+class(pe)
+(pe)
+
+x <- 1:16
+mode(x)
+
+dim(x) <- c(4,4)
+class(x)
+
+is.numeric(x)
+mode(x) <- "character"
+mode(x)
 ```
