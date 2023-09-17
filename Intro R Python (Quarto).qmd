@@ -597,4 +597,60 @@ class(x)
 is.numeric(x)
 mode(x) <- "character"
 mode(x)
+class(x)
+
+x <- factor(x)
+class(x)
+mode(x)
+
+is.array(x)
+is.data.frame(x)
+is.matrix(x)
+is_tibble(x)
+is.vector(x)
+is.list(x)
+is.factor(x)
+typeof(x)
+
+class(pe[1:15, c("bill_length_mm", "bill_depth_mm")])
+class(penguins[1:15, c("bill_length_mm", "bill_depth_mm")])
+class(pe[1:15, c("bill_length_mm")])
+class(penguins[1:15, c("bill_length_mm")])
+
+library(dplyr)
+select(filter(pe, species=="Adelie"), bill_length_mm, bill_depth_mm)
+filter(select(pe, bill_length_mm, bill_depth_mm, species), species=="Adelie")
+
+pe
+pe[pe$species=='Adelie', c("bill_length_mm", "bill_depth_mm")]
+
+subset(pe, pe$species=='Adelie', c("bill_length_mm", "bill_depth_mm"))
+
+select(pe, bill_length_mm, bill_depth_mm, species) |> filter(species=="Adelie")
+
+filter(pe, species=="Adelie") |> select(bill_length_mm, bill_depth_mm, species)
+
+students <- list(names=c('Judy', 'Max', 'Dan'),
+                 grades=c(78, 85, 99))
+print("before:")
+students
+
+gradeConvertor<- function (grade){
+  grade = as.numeric(grade)
+  if(grade > 100 | grade < 0) print ("grade out of the range")
+  else if(grade >= 90 & grade <= 100) return ("A")
+  else if(grade >= 80 & grade < 90) return ("B")
+  else if(grade >= 70 & grade < 80) return ("C")
+  else return ("F")
+}
+
+#students$grades <-sapply(students$grades, gradeConvertor)
+
+for(i in 1:length(students$grades)){
+  students$grades[i] = gradeConvertor(students$grades[i])
+}
+
+print ("after:")
+
+students
 ```
